@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 模型价格对比</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>AI 模型价格对比</h1>
+      <p id="metaLine">正在加载数据...</p>
+    </div>
+    <div class="topbar-actions">
+      <a href="./data/models.json" download>下载模型 JSON</a>
+      <a href="./data/evidence.json" download>下载证据 JSON</a>
+    </div>
+  </header>
+
+  <section class="calculator" aria-label="成本计算器">
+    <label>输入 token <input id="inputTokens" type="number" min="0" value="100000"></label>
+    <label>输出 token <input id="outputTokens" type="number" min="0" value="20000"></label>
+    <label>缓存命中率 <input id="cacheHitRate" type="range" min="0" max="100" value="50"><span id="cacheHitLabel">50%</span></label>
+  </section>
+
+  <main class="layout">
+    <aside class="filters">
+      <h2>筛选</h2>
+      <label>厂商 <select id="vendorFilter"><option value="">全部</option></select></label>
+      <label>国内外 <select id="regionFilter"><option value="">全部</option><option>国内</option><option>国外</option></select></label>
+      <label>证据状态 <select id="statusFilter"><option value="">全部</option><option value="auto_extracted">自动抽取</option><option value="needs_review">待复核</option><option value="verified">已复核</option></select></label>
+    </aside>
+
+    <section class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="name">模型</th>
+            <th data-sort="vendor">厂商</th>
+            <th data-sort="region">国内外</th>
+            <th data-sort="context">上下文</th>
+            <th data-sort="input_uncached">未命中输入</th>
+            <th data-sort="input_cached">命中缓存输入</th>
+            <th data-sort="output">输出</th>
+            <th data-sort="scenario_cost">场景成本</th>
+            <th data-sort="status">证据状态</th>
+          </tr>
+        </thead>
+        <tbody id="modelRows"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <button id="closeDrawer" type="button">关闭</button>
+    <div id="drawerContent"></div>
+  </aside>
+
+  <script src="./app.js"></script>
+</body>
+</html>

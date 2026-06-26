@@ -1,0 +1,328 @@
+{
+  "vendor": "DeepSeek",
+  "region": "国内",
+  "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "opencli_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "page_id": "B300ADA48ACDD1973758D0C6613CF74A",
+  "extracted_at": "2026-06-25T14:57:47.501Z",
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "base_record_id": "recvkrjnYevEuE",
+      "seed_context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "seed_pricing": {
+        "input_uncached": 1,
+        "input_cached": 0.02,
+        "output": 2
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "deepseek-v4-pro",
+      "base_record_id": "recvkrjopUEbFk",
+      "seed_context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "seed_pricing": {
+        "input_uncached": 3,
+        "input_cached": 0.025,
+        "output": 6
+      }
+    }
+  ],
+  "tables": [
+    {
+      "caption": null,
+      "rows": [
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "模型"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "deepseek-v4-flash(1)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "deepseek-v4-pro"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "BASE URL (OpenAI 格式)"
+          },
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "https://api.deepseek.com"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "BASE URL (Anthropic 格式)"
+          },
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "https://api.deepseek.com/anthropic"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "模型版本"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "DeepSeek-V4-Flash"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "DeepSeek-V4-Pro"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "思考模式"
+          },
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持非思考与思考模式（默认） 切换方式详见思考模式"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "上下文长度"
+          },
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "1M"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "输出长度"
+          },
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "最大 384K"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 4,
+            "tag": "td",
+            "text": "功能"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "Json Output"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "Tool Calls"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "对话前缀续写（Beta）"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "支持"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "FIM 补全（Beta）"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "仅非思考模式支持"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "仅非思考模式支持"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 3,
+            "tag": "td",
+            "text": "价格"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "百万tokens输入（缓存命中）"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "0.02元"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "0.025元"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "百万tokens输入（缓存未命中）"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "1元"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "3元"
+          }
+        ],
+        [
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "百万tokens输出"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "2元"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "6元"
+          }
+        ],
+        [
+          {
+            "colspan": 2,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "并发限制(2)"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "2500"
+          },
+          {
+            "colspan": 1,
+            "rowspan": 1,
+            "tag": "td",
+            "text": "500"
+          }
+        ]
+      ],
+      "tableIndex": 0
+    }
+  ]
+}

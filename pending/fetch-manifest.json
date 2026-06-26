@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-06-25T14:34:32.104Z",
+  "source_file": "data/sources.yaml",
+  "snapshot_dir": "data/snapshots/docs",
+  "count": 1,
+  "items": [
+    {
+      "vendor": "DeepSeek",
+      "region": "国内",
+      "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "status": "ok",
+      "status_code": 200,
+      "content_length": 21269,
+      "html_file": "data/snapshots/docs/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.html",
+      "meta_file": "data/snapshots/docs/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.meta.json",
+      "models": [
+        "deepseek-v4-flash",
+        "deepseek-v4-pro"
+      ]
+    }
+  ]
+}

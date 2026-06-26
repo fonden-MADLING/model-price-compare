@@ -1,0 +1,40 @@
+{
+  "vendor": "DeepSeek",
+  "region": "国内",
+  "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "opencli_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "title": "模型 & 价格 | DeepSeek API Docs",
+  "selector": "main",
+  "total_chars": 1221,
+  "fetched_at": "2026-06-25T15:00:18.992Z",
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "base_record_id": "recvkrjnYevEuE",
+      "seed_context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "seed_pricing": {
+        "input_uncached": 1,
+        "input_cached": 0.02,
+        "output": 2
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "deepseek-v4-pro",
+      "base_record_id": "recvkrjopUEbFk",
+      "seed_context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "seed_pricing": {
+        "input_uncached": 3,
+        "input_cached": 0.025,
+        "output": 6
+      }
+    }
+  ]
+}

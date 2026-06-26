@@ -1,0 +1,26 @@
+{
+  "vendor": "阿里",
+  "region": "国内",
+  "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
+  "opencli_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
+  "title": "大模型服务平台百炼控制台",
+  "selector": "body",
+  "total_chars": 18059,
+  "fetched_at": "2026-06-25T15:00:18.992Z",
+  "models": [
+    {
+      "id": "qwen3.6-plus",
+      "name": "qwen3.6-plus",
+      "base_record_id": "recvkrjpHmmFTD",
+      "seed_context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "seed_pricing": {
+        "input_uncached": 2,
+        "input_cached": 0.2,
+        "output": 12
+      }
+    }
+  ]
+}

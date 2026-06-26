@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-25T00:00:00+08:00",
+  "source_revision": "sample",
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "vendor": "DeepSeek",
+      "region": "国内",
+      "context_window": {
+        "label": "1M",
+        "tokens": 1000000,
+        "note": null
+      },
+      "pricing": {
+        "currency": "CNY",
+        "unit": "PER_1M_TOKENS",
+        "input_uncached": 1,
+        "input_cached": 0.02,
+        "cache_write": null,
+        "output": 2,
+        "notes": []
+      },
+      "source": {
+        "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+        "fetched_at": "2026-06-25T00:00:00+08:00",
+        "evidence_ids": ["ev_deepseek-v4-flash_pricing_input_uncached"]
+      },
+      "review": {
+        "status": "auto_extracted",
+        "confidence": 0.9,
+        "reviewed_at": null,
+        "reviewer": null
+      }
+    }
+  ]
+}
+

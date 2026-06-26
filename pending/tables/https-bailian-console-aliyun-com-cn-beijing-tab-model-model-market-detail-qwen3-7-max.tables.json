@@ -1,0 +1,25 @@
+{
+  "vendor": "阿里",
+  "region": "国内",
+  "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
+  "opencli_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
+  "page_id": "AC984C9F94357D9A943E432540126203",
+  "extracted_at": "2026-06-25T14:57:47.501Z",
+  "models": [
+    {
+      "id": "qwen3.7-max",
+      "name": "qwen3.7-max",
+      "base_record_id": "recvkrjoQxLv1Z",
+      "seed_context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "seed_pricing": {
+        "input_uncached": 12,
+        "input_cached": 1.2,
+        "output": 36
+      }
+    }
+  ],
+  "tables": []
+}

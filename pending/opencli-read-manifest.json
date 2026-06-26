@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-25T15:00:18.992Z",
+  "source_file": "data/sources.yaml",
+  "snapshot_dir": "data/snapshots/opencli",
+  "count": 3,
+  "items": [
+    {
+      "vendor": "DeepSeek",
+      "region": "国内",
+      "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "status": "ok",
+      "title": "模型 & 价格 | DeepSeek API Docs",
+      "total_chars": 1221,
+      "markdown_file": "data/snapshots/opencli/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.md",
+      "meta_file": "data/snapshots/opencli/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.meta.json",
+      "models": [
+        "deepseek-v4-flash",
+        "deepseek-v4-pro"
+      ]
+    },
+    {
+      "vendor": "阿里",
+      "region": "国内",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
+      "status": "ok",
+      "title": "大模型服务平台百炼控制台",
+      "total_chars": 17463,
+      "markdown_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-7-max.md",
+      "meta_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-7-max.meta.json",
+      "models": [
+        "qwen3.7-max"
+      ]
+    },
+    {
+      "vendor": "阿里",
+      "region": "国内",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
+      "status": "ok",
+      "title": "大模型服务平台百炼控制台",
+      "total_chars": 18059,
+      "markdown_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-6-plus.md",
+      "meta_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-6-plus.meta.json",
+      "models": [
+        "qwen3.6-plus"
+      ]
+    }
+  ]
+}

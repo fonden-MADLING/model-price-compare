@@ -1,0 +1,25 @@
+{
+  "name": "model-price-compare",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI 模型价格对比静态站数据抽取与展示项目",
+  "scripts": {
+    "fetch": "node scripts/fetch-docs.js",
+    "opencli:read": "node scripts/opencli-read-docs.js",
+    "opencli:tables": "node scripts/opencli-extract-tables.js",
+    "prepare:opencli": "node scripts/extract-opencli.js",
+    "generate:pending": "node scripts/generate-pending-data.js",
+    "validate": "node scripts/validate.js",
+    "build:data": "node scripts/build-data.js",
+    "test": "node --test tests/*.test.js",
+    "check": "npm run test && npm run validate",
+    "dev": "node scripts/dev-server.js",
+    "build:static": "node scripts/build-static.js"
+  },
+  "dependencies": {
+    "yaml": "^2.4.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}

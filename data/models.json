@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-25T16:10:46.304Z",
+  "source_revision": "rules-v1",
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "name": "deepseek-v4-flash",
+      "vendor": "DeepSeek",
+      "region": "国内",
+      "context_window": {
+        "label": "1M",
+        "tokens": 1000000,
+        "note": null
+      },
+      "pricing": {
+        "currency": "CNY",
+        "unit": "PER_1M_TOKENS",
+        "input_uncached": 1,
+        "input_cached": 0.02,
+        "cache_write": null,
+        "output": 2,
+        "notes": []
+      },
+      "source": {
+        "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+        "fetched_at": "2026-06-25T16:10:46.304Z",
+        "evidence_ids": [
+          "ev_deepseek-v4-flash_context_window_tokens",
+          "ev_deepseek-v4-flash_pricing_input_cached",
+          "ev_deepseek-v4-flash_pricing_input_uncached",
+          "ev_deepseek-v4-flash_pricing_output"
+        ]
+      },
+      "review": {
+        "status": "auto_extracted",
+        "confidence": 0.96,
+        "reviewed_at": null,
+        "reviewer": null
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "deepseek-v4-pro",
+      "vendor": "DeepSeek",
+      "region": "国内",
+      "context_window": {
+        "label": "1M",
+        "tokens": 1000000,
+        "note": null
+      },
+      "pricing": {
+        "currency": "CNY",
+        "unit": "PER_1M_TOKENS",
+        "input_uncached": 3,
+        "input_cached": 0.025,
+        "cache_write": null,
+        "output": 6,
+        "notes": []
+      },
+      "source": {
+        "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+        "fetched_at": "2026-06-25T16:10:46.304Z",
+        "evidence_ids": [
+          "ev_deepseek-v4-pro_context_window_tokens",
+          "ev_deepseek-v4-pro_pricing_input_cached",
+          "ev_deepseek-v4-pro_pricing_input_uncached",
+          "ev_deepseek-v4-pro_pricing_output"
+        ]
+      },
+      "review": {
+        "status": "auto_extracted",
+        "confidence": 0.96,
+        "reviewed_at": null,
+        "reviewer": null
+      }
+    },
+    {
+      "id": "qwen3.7-max",
+      "name": "qwen3.7-max",
+      "vendor": "阿里",
+      "region": "国内",
+      "context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "pricing": {
+        "currency": "CNY",
+        "unit": "PER_1M_TOKENS",
+        "input_uncached": 12,
+        "input_cached": 1.2,
+        "cache_write": 15,
+        "output": 36,
+        "notes": [
+          "阿里百炼页面为非标准表格，价格来自 OpenCLI Markdown 的模型价格段落。"
+        ]
+      },
+      "source": {
+        "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
+        "fetched_at": "2026-06-25T16:10:46.304Z",
+        "evidence_ids": [
+          "ev_qwen3.7-max_pricing_input_uncached",
+          "ev_qwen3.7-max_pricing_input_cached",
+          "ev_qwen3.7-max_pricing_cache_write",
+          "ev_qwen3.7-max_pricing_output"
+        ]
+      },
+      "review": {
+        "status": "needs_review",
+        "confidence": 0.84,
+        "reviewed_at": null,
+        "reviewer": null
+      }
+    },
+    {
+      "id": "qwen3.6-plus",
+      "name": "qwen3.6-plus",
+      "vendor": "阿里",
+      "region": "国内",
+      "context_window": {
+        "label": "1M",
+        "tokens": 1000000
+      },
+      "pricing": {
+        "currency": "CNY",
+        "unit": "PER_1M_TOKENS",
+        "input_uncached": 2,
+        "input_cached": 0.2,
+        "cache_write": 2.5,
+        "output": 12,
+        "notes": [
+          "阿里百炼页面为非标准表格，价格来自 OpenCLI Markdown 的模型价格段落。"
+        ]
+      },
+      "source": {
+        "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
+        "fetched_at": "2026-06-25T16:10:46.304Z",
+        "evidence_ids": [
+          "ev_qwen3.6-plus_pricing_input_uncached",
+          "ev_qwen3.6-plus_pricing_input_cached",
+          "ev_qwen3.6-plus_pricing_cache_write",
+          "ev_qwen3.6-plus_pricing_output"
+        ]
+      },
+      "review": {
+        "status": "needs_review",
+        "confidence": 0.84,
+        "reviewed_at": null,
+        "reviewer": null
+      }
+    }
+  ]
+}

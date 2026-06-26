@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-25T14:57:47.501Z",
+  "source_file": "data/sources.yaml",
+  "table_dir": "pending/tables",
+  "count": 3,
+  "items": [
+    {
+      "vendor": "DeepSeek",
+      "region": "国内",
+      "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "status": "ok",
+      "table_count": 1,
+      "output_file": "pending/tables/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.tables.json",
+      "models": [
+        "deepseek-v4-flash",
+        "deepseek-v4-pro"
+      ]
+    },
+    {
+      "vendor": "阿里",
+      "region": "国内",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
+      "status": "ok",
+      "table_count": 0,
+      "output_file": "pending/tables/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-7-max.tables.json",
+      "models": [
+        "qwen3.7-max"
+      ]
+    },
+    {
+      "vendor": "阿里",
+      "region": "国内",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
+      "status": "ok",
+      "table_count": 0,
+      "output_file": "pending/tables/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-6-plus.tables.json",
+      "models": [
+        "qwen3.6-plus"
+      ]
+    }
+  ]
+}

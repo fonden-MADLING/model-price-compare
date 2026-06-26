@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-25T15:00:18.992Z",
+  "items": [
+    {
+      "vendor": "DeepSeek",
+      "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "models": ["deepseek-v4-flash", "deepseek-v4-pro"],
+      "read_status": "ok",
+      "table_status": "ok",
+      "recommended_strategy": "dom_table_rule",
+      "reason": "页面存在标准 table，模型列与价格行结构清晰，可直接按行列映射。"
+    },
+    {
+      "vendor": "阿里",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
+      "models": ["qwen3.7-max"],
+      "read_status": "ok",
+      "table_status": "empty",
+      "recommended_strategy": "markdown_price_section_rule",
+      "reason": "页面没有标准 table，但 OpenCLI Markdown 中包含“模型价格”段落和逐项价格文本。该模型缓存命中价应优先识别“显式缓存命中”，不要误用“输入（缓存命中）”。"
+    },
+    {
+      "vendor": "阿里",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
+      "models": ["qwen3.6-plus"],
+      "read_status": "ok",
+      "table_status": "empty",
+      "recommended_strategy": "markdown_price_section_rule",
+      "reason": "页面没有标准 table，但 OpenCLI Markdown 中包含“模型价格”段落和逐项价格文本。该模型缓存命中价应优先识别“显式缓存命中”。"
+    }
+  ]
+}
+

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/model-price-compare/evidence.schema.json",
+  "title": "ModelPriceEvidenceDataset",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "evidence"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": ["string", "null"]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence_item"
+      }
+    }
+  },
+  "$defs": {
+    "evidence_item": {
+      "type": "object",
+      "required": ["id", "model_id", "field", "doc_url", "quote", "extracted_at"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "model_id": {
+          "type": "string"
+        },
+        "field": {
+          "type": "string",
+          "description": "例如 pricing.input_uncached、pricing.input_cached、pricing.output、context_window.tokens。"
+        },
+        "doc_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "quote": {
+          "type": "string",
+          "description": "只保存短摘录，避免把整篇官方文档复制进仓库。"
+        },
+        "normalized_value": {
+          "type": ["string", "number", "null"]
+        },
+        "unit": {
+          "type": ["string", "null"]
+        },
+        "extracted_at": {
+          "type": ["string", "null"]
+        },
+        "confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "note": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}
+

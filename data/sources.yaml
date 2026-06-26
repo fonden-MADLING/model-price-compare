@@ -1,0 +1,341 @@
+# 数据源清单来自飞书 Base「AI模型按量计费对比（2026.05）」。
+# 这里保存的是“要去哪里抽取”和“当前 Base 中已有的种子值”，不是最终可信结果。
+# 后续 OpenCLI 应以 doc_url 中的官方文档为准，并把证据写入 evidence.json。
+
+version: 1
+exported_at: "2026-06-25T22:24:44+08:00"
+
+source_base:
+  name: "AI模型按量计费对比（2026.05）"
+  url: "https://my.feishu.cn/base/YtFIbDittabeV8sW57Kcui5ynYg"
+  base_token: "YtFIbDittabeV8sW57Kcui5ynYg"
+  table_id: "tblU2FvbCb5QyujV"
+  view_id: "vewbIuWEsQ"
+  record_count: 26
+  has_more: false
+
+defaults:
+  price_unit: "CNY_PER_1M_TOKENS"
+  extraction_status: "pending"
+  needs_official_verification: true
+
+sources:
+  - vendor: "DeepSeek"
+    region: "国内"
+    doc_url: "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+    models:
+      - id: "deepseek-v4-flash"
+        name: "deepseek-v4-flash"
+        base_record_id: "recvkrjnYevEuE"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 1
+          input_cached: 0.02
+          output: 2
+      - id: "deepseek-v4-pro"
+        name: "deepseek-v4-pro"
+        base_record_id: "recvkrjopUEbFk"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 3
+          input_cached: 0.025
+          output: 6
+
+  - vendor: "阿里"
+    region: "国内"
+    doc_url: "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max"
+    models:
+      - id: "qwen3.7-max"
+        name: "qwen3.7-max"
+        base_record_id: "recvkrjoQxLv1Z"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 12
+          input_cached: 1.2
+          output: 36
+
+  - vendor: "阿里"
+    region: "国内"
+    doc_url: "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus"
+    models:
+      - id: "qwen3.6-plus"
+        name: "qwen3.6-plus"
+        base_record_id: "recvkrjpHmmFTD"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 2
+          input_cached: 0.2
+          output: 12
+
+  - vendor: "阿里"
+    region: "国内"
+    doc_url: "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-flash"
+    models:
+      - id: "qwen3.6-flash"
+        name: "qwen3.6-flash"
+        base_record_id: "recvkrjq9HaiqV"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 1.2
+          input_cached: 0.12
+          output: 7.2
+
+  - vendor: "字节/火山引擎"
+    region: "国内"
+    doc_url: "https://www.volcengine.com/docs/82379/1330310?lang=zh"
+    models:
+      - id: "doubao-seed-2.0-pro"
+        name: "doubao-seed-2.0-pro"
+        base_record_id: "recvkrjr2tV6yc"
+        seed_context_window:
+          label: "256K"
+          tokens: 256000
+        seed_pricing:
+          input_uncached: 3.2
+          input_cached: 0.64
+          output: 16
+      - id: "doubao-seed-2.0-lite"
+        name: "doubao-seed-2.0-lite"
+        base_record_id: "recvkrjrut0h6J"
+        seed_context_window:
+          label: "256K"
+          tokens: 256000
+        seed_pricing:
+          input_uncached: 0.6
+          input_cached: 0.12
+          output: 3.6
+      - id: "doubao-seed-2.0-mini"
+        name: "doubao-seed-2.0-mini"
+        base_record_id: "recvkrjs6qZgTz"
+        seed_context_window:
+          label: "256K"
+          tokens: 256000
+        seed_pricing:
+          input_uncached: 0.2
+          input_cached: 0.04
+          output: 2
+      - id: "doubao-seed-2.0-code"
+        name: "doubao-seed-2.0-code"
+        base_record_id: "recvkrjsz1jnTu"
+        seed_context_window:
+          label: "256K"
+          tokens: 256000
+        seed_pricing:
+          input_uncached: 3.2
+          input_cached: 0.64
+          output: 16
+
+  - vendor: "智谱"
+    region: "国内"
+    doc_url: "https://open.bigmodel.cn/pricing"
+    models:
+      - id: "glm-5.1"
+        name: "GLM-5.1"
+        base_record_id: "recvkrjt0QYabE"
+        seed_context_window:
+          label: "200K+"
+          tokens: 200000
+        seed_pricing:
+          input_uncached: 6
+          input_cached: 1.3
+          output: 24
+      - id: "glm-5-turbo"
+        name: "GLM-5-Turbo"
+        base_record_id: "recvkrjtv5kjTg"
+        seed_context_window:
+          label: "200K+"
+          tokens: 200000
+        seed_pricing:
+          input_uncached: 5
+          input_cached: 1.2
+          output: 22
+      - id: "glm-5"
+        name: "GLM-5"
+        base_record_id: "recvkrjtXf9FjT"
+        seed_context_window:
+          label: "200K+"
+          tokens: 200000
+        seed_pricing:
+          input_uncached: 4
+          input_cached: 1
+          output: 18
+
+  - vendor: "MiniMax"
+    region: "国内"
+    doc_url: "https://platform.minimaxi.com/docs/guides/pricing-paygo"
+    models:
+      - id: "minimax-m2.7"
+        name: "MiniMax-M2.7"
+        base_record_id: "recvkrjurrKVdt"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 2.1
+          input_cached: 0.42
+          output: 8.4
+      - id: "minimax-m2.7-highspeed"
+        name: "MiniMax-M2.7-highspeed"
+        base_record_id: "recvkrjuQ50N6P"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 4.2
+          input_cached: 0.42
+          output: 16.8
+
+  - vendor: "月之暗面"
+    region: "国内"
+    doc_url: "https://platform.kimi.com/docs/pricing/chat-k26"
+    models:
+      - id: "kimi-k2.6"
+        name: "kimi-k2.6"
+        base_record_id: "recvkrjvgytb7B"
+        seed_context_window:
+          label: "262K"
+          tokens: 262000
+        seed_pricing:
+          input_uncached: 6.5
+          input_cached: 1.1
+          output: 27
+
+  - vendor: "月之暗面"
+    region: "国内"
+    doc_url: "https://platform.kimi.com/docs/pricing/chat-k25"
+    models:
+      - id: "kimi-k2.5"
+        name: "kimi-k2.5"
+        base_record_id: "recvkrjvK1W0JH"
+        seed_context_window:
+          label: "262K"
+          tokens: 262000
+        seed_pricing:
+          input_uncached: 4
+          input_cached: 0.7
+          output: 21
+
+  - vendor: "OpenAI"
+    region: "国外"
+    doc_url: "https://developers.openai.com/api/docs/pricing"
+    models:
+      - id: "gpt-5.5"
+        name: "gpt-5.5"
+        base_record_id: "recvkrjwaLPiDw"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 36
+          input_cached: 3.6
+          output: 216
+      - id: "gpt-5.4"
+        name: "gpt-5.4"
+        base_record_id: "recvkrjwzdgRFg"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 18
+          input_cached: 1.8
+          output: 108
+      - id: "gpt-5.4-mini"
+        name: "gpt-5.4-mini"
+        base_record_id: "recvkrjwYtSMnz"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 5.4
+          input_cached: 0.54
+          output: 32.4
+      - id: "gpt-5.4-nano"
+        name: "gpt-5.4-nano"
+        base_record_id: "recvkrjxqcjXhX"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 1.44
+          input_cached: 0.144
+          output: 9
+
+  - vendor: "Anthropic"
+    region: "国外"
+    doc_url: "https://platform.claude.com/docs/zh-CN/about-claude/pricing"
+    models:
+      - id: "claude-opus-4.7"
+        name: "Claude Opus 4.7"
+        base_record_id: "recvkrjxP7r3gA"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 36
+          input_cached: 3.6
+          output: 180
+      - id: "claude-sonnet-4.6"
+        name: "Claude Sonnet 4.6"
+        base_record_id: "recvkrjykjDKGQ"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 21.6
+          input_cached: 2.16
+          output: 108
+      - id: "claude-haiku-4.5"
+        name: "Claude Haiku 4.5"
+        base_record_id: "recvkrjyNlBrGY"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 7.2
+          input_cached: 0.72
+          output: 36
+
+  - vendor: "xAI"
+    region: "国外"
+    doc_url: "https://docs.x.ai/developers/pricing"
+    models:
+      - id: "grok-4.3"
+        name: "grok-4.3"
+        base_record_id: "recvkrjzelgM1j"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 9
+          input_cached: 1.44
+          output: 18
+      - id: "grok-4.20-multi-agent"
+        name: "grok-4.20-multi-agent"
+        base_record_id: "recvkrjzF34Vrf"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 9
+          input_cached: 1.44
+          output: 18
+      - id: "grok-4.20-reasoning"
+        name: "grok-4.20-reasoning"
+        base_record_id: "recvkrjA4kbMaD"
+        seed_context_window:
+          label: "1M"
+          tokens: 1000000
+        seed_pricing:
+          input_uncached: 9
+          input_cached: 1.44
+          output: 18

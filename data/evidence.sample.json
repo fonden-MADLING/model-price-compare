@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-06-25T00:00:00+08:00",
+  "evidence": [
+    {
+      "id": "ev_deepseek-v4-flash_pricing_input_uncached",
+      "model_id": "deepseek-v4-flash",
+      "field": "pricing.input_uncached",
+      "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+      "quote": "这里后续保存官方文档中的短摘录。",
+      "normalized_value": 1,
+      "unit": "CNY_PER_1M_TOKENS",
+      "extracted_at": "2026-06-25T00:00:00+08:00",
+      "confidence": 0.9,
+      "note": "示例结构，不作为真实证据。"
+    }
+  ]
+}
+

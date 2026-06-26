@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/model-price-compare/models.schema.json",
+  "title": "ModelPriceDataset",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "models"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 时间；为空表示当前文件还没有由抽取流程生成。"
+    },
+    "source_revision": {
+      "type": ["string", "null"],
+      "description": "用于标记本次数据来自哪个 Git commit、Base 导出版本或抽取批次。"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/model"
+      }
+    }
+  },
+  "$defs": {
+    "model": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "vendor",
+        "region",
+        "context_window",
+        "pricing",
+        "source",
+        "review"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "vendor": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string",
+          "enum": ["国内", "国外"]
+        },
+        "context_window": {
+          "type": "object",
+          "required": ["label", "tokens"],
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string"
+            },
+            "tokens": {
+              "type": ["integer", "null"],
+              "minimum": 0
+            },
+            "note": {
+              "type": ["string", "null"]
+            }
+          }
+        },
+        "pricing": {
+          "type": "object",
+          "required": ["currency", "unit", "input_uncached", "input_cached", "output"],
+          "additionalProperties": false,
+          "properties": {
+            "currency": {
+              "type": "string",
+              "description": "建议最终统一成 CNY；如果保留官方币种，应在 normalized 字段另存换算值。"
+            },
+            "unit": {
+              "type": "string",
+              "enum": ["PER_1M_TOKENS"]
+            },
+            "input_uncached": {
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "input_cached": {
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "cache_write": {
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "output": {
+              "type": ["number", "null"],
+              "minimum": 0
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": ["doc_url", "fetched_at", "evidence_ids"],
+          "additionalProperties": false,
+          "properties": {
+            "doc_url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "fetched_at": {
+              "type": ["string", "null"]
+            },
+            "evidence_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "review": {
+          "type": "object",
+          "required": ["status"],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": ["pending", "auto_extracted", "needs_review", "verified", "rejected"]
+            },
+            "confidence": {
+              "type": ["number", "null"],
+              "minimum": 0,
+              "maximum": 1
+            },
+            "reviewed_at": {
+              "type": ["string", "null"]
+            },
+            "reviewer": {
+              "type": ["string", "null"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
