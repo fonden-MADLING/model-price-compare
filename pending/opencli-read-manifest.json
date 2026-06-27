@@ -1,18 +1,17 @@
 {
-  "generated_at": "2026-06-25T15:00:18.992Z",
+  "generated_at": "2026-06-27T12:24:15.519Z",
   "source_file": "data/sources.yaml",
   "snapshot_dir": "data/snapshots/opencli",
-  "count": 3,
+  "count": 12,
   "items": [
     {
       "vendor": "DeepSeek",
       "region": "国内",
       "doc_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
-      "status": "ok",
-      "title": "模型 & 价格 | DeepSeek API Docs",
-      "total_chars": 1221,
-      "markdown_file": "data/snapshots/opencli/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.md",
-      "meta_file": "data/snapshots/opencli/deepseek-https-api-docs-deepseek-com-zh-cn-quick-start-pricing.meta.json",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
       "models": [
         "deepseek-v4-flash",
         "deepseek-v4-pro"
@@ -22,11 +21,10 @@
       "vendor": "阿里",
       "region": "国内",
       "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.7-max",
-      "status": "ok",
-      "title": "大模型服务平台百炼控制台",
-      "total_chars": 17463,
-      "markdown_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-7-max.md",
-      "meta_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-7-max.meta.json",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
       "models": [
         "qwen3.7-max"
       ]
@@ -35,13 +33,133 @@
       "vendor": "阿里",
       "region": "国内",
       "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-plus",
-      "status": "ok",
-      "title": "大模型服务平台百炼控制台",
-      "total_chars": 18059,
-      "markdown_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-6-plus.md",
-      "meta_file": "data/snapshots/opencli/https-bailian-console-aliyun-com-cn-beijing-tab-model-model-market-detail-qwen3-6-plus.meta.json",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
       "models": [
         "qwen3.6-plus"
+      ]
+    },
+    {
+      "vendor": "阿里",
+      "region": "国内",
+      "doc_url": "https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-market/detail/qwen3.6-flash",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "qwen3.6-flash"
+      ]
+    },
+    {
+      "vendor": "字节/火山引擎",
+      "region": "国内",
+      "doc_url": "https://www.volcengine.com/docs/82379/1330310?lang=zh",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "doubao-seed-2.0-pro",
+        "doubao-seed-2.0-lite",
+        "doubao-seed-2.0-mini",
+        "doubao-seed-2.0-code"
+      ]
+    },
+    {
+      "vendor": "智谱",
+      "region": "国内",
+      "doc_url": "https://open.bigmodel.cn/pricing",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "glm-5.1",
+        "glm-5-turbo",
+        "glm-5"
+      ]
+    },
+    {
+      "vendor": "MiniMax",
+      "region": "国内",
+      "doc_url": "https://platform.minimaxi.com/docs/guides/pricing-paygo",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "minimax-m2.7",
+        "minimax-m2.7-highspeed"
+      ]
+    },
+    {
+      "vendor": "月之暗面",
+      "region": "国内",
+      "doc_url": "https://platform.kimi.com/docs/pricing/chat-k26",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "kimi-k2.6"
+      ]
+    },
+    {
+      "vendor": "月之暗面",
+      "region": "国内",
+      "doc_url": "https://platform.kimi.com/docs/pricing/chat-k25",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "kimi-k2.5"
+      ]
+    },
+    {
+      "vendor": "OpenAI",
+      "region": "国外",
+      "doc_url": "https://developers.openai.com/api/docs/pricing",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "gpt-5.5",
+        "gpt-5.4",
+        "gpt-5.4-mini",
+        "gpt-5.4-nano"
+      ]
+    },
+    {
+      "vendor": "Anthropic",
+      "region": "国外",
+      "doc_url": "https://platform.claude.com/docs/zh-CN/about-claude/pricing",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "claude-opus-4.7",
+        "claude-sonnet-4.6",
+        "claude-haiku-4.5"
+      ]
+    },
+    {
+      "vendor": "xAI",
+      "region": "国外",
+      "doc_url": "https://docs.x.ai/developers/pricing",
+      "status": "error",
+      "error": "opencli exited with code 1",
+      "stdout": "undefined\n ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL  Command \"browser\" not found\n",
+      "stderr": null,
+      "models": [
+        "grok-4.3",
+        "grok-4.20-multi-agent",
+        "grok-4.20-reasoning"
       ]
     }
   ]
